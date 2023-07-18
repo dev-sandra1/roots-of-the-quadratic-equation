@@ -5,29 +5,29 @@ public class Excersice1{
         
         Scanner enter = new Scanner(System.in);
 
-        int A, B, C;
-        int equis, cuadrado, resulAC, multiplication, cinco, raizCuadrada, suma, resta, positivo, negativo, total;
+        int num1, num2, num3;
+        int equis, square, resulAC, multiplication, squareSum, squareRoot, addition, subtraction, positive, negative, total;
     
-        System.out.println(" ingresa primer numero;");
-        A = enter.nextInt();
+        System.out.println(" enter first number:");
+        num1 = enter.nextInt();
 
-        System.out.println(" ingresa segundo numero;");
-        B = enter.nextInt();
+        System.out.println(" enter second number:");
+        num2 = enter.nextInt();
 
-        System.out.println(" ingresa tercer numero;");
-        C = enter.nextInt();
+        System.out.println("enter third number:");
+        num3 = enter.nextInt();
 
-         equis = 1 * -B;
-         cuadrado = (int) (Math.pow( B , 2));
-         resulAC = ( (-4 * A) * C);
-          multiplication = 2 * A;
-          cinco = cuadrado + resulAC;
-          raizCuadrada = (int) Math.sqrt( cinco );
-          suma = ((equis +  raizCuadrada ) / multiplication );
-          resta = ((equis -  raizCuadrada ) / multiplication );
-          positivo = (int) Math.pow( suma, 2) + (B * suma) + (C); 
-            negativo = (int) Math.pow( resta, 2) + (B * resta) + (C); 
-             total = positivo + negativo;
+         equis = 1 * -num2;
+         square = (int) (Math.pow( num2 , 2));
+         resulAC = ( (-4 * num1) * num3);
+         multiplication = 2 * num1;
+         squareSum = square + resulAC;
+         squareRoot = (int) Math.sqrt( squareSum );
+         addition = ((equis +    squareRoot ) / multiplication );
+         subtraction = ((equis -    squareRoot ) / multiplication );
+         positive = (int) Math.pow( addition, 2) + (num2 * addition) + (num3);
+         negative = (int) Math.pow( subtraction, 2) + (num2 * subtraction) + (num3); 
+         total = positive + negative;
 
          System.out.println(+ total); 
         

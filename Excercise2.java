@@ -4,20 +4,20 @@ public class Excercise2 {
  public static void main(String[] args) {
     
     Scanner enter = new Scanner (System.in);
-    int numero;
-    int multiplo;
+    int num;
+    int multiple;
 
-         System.out.println("dijata un numero");
-    numero = enter.nextInt();
+     System.out.println("say a number: ");
+     num = enter.nextInt();
 
-     System.out.println("ingresa un multiplo");
-    multiplo = enter.nextInt();
+     System.out.println("enter a multiple: ");
+         multiple = enter.nextInt();
 
-    if(numero % multiplo == 0) {
-        System.out.println("es multriplo es de:" + numero);
+    if(num % multiple == 0) {
+        System.out.println("is a multiple is of :" + num);
 
     }else {
-    System.out.println("lo siento este no es un multiplo"); }
+    System.out.println("sorry this is not a multiple"); }
 
  }
 }
